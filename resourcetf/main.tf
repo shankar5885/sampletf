@@ -50,6 +50,6 @@ resource "azurerm_managed_disk" "managed_disk" {
   disk_size_gb         = "4"
 
   tags = {
-    environment = "Production"
+    environment = "test"
   }
 }
