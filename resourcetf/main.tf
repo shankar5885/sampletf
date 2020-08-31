@@ -37,7 +37,7 @@ resource "azurerm_key_vault" "kv01" {
   }
 
   tags = {
-    environment = "Testing"
+    environment = "Production"
   }
 }
 
@@ -50,6 +50,6 @@ resource "azurerm_managed_disk" "managed_disk" {
   disk_size_gb         = "4"
 
   tags = {
-    environment = "testing"
+    environment = "Production"
   }
 }
