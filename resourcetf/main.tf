@@ -53,3 +53,16 @@ resource "azurerm_managed_disk" "managed_disk" {
     environment = "Production"
   }
 }
+
+resource "azurerm_managed_disk" "managed_disk2" {
+  name                 = "manageddisk02"
+  location             = azurerm_resource_group.rg.location
+  resource_group_name  = azurerm_resource_group.rg.name
+  storage_account_type = "Standard_LRS"
+  create_option        = "Empty"
+  disk_size_gb         = "5"
+
+  tags = {
+    environment = "Development"
+  }
+}
