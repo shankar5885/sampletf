@@ -1,6 +1,6 @@
 variable "rg_name" {
     type = string
-    default = "TestRG01"
+    default = "TestRG02"
 }
 variable "rg_location" {
     type = string
@@ -9,7 +9,7 @@ variable "rg_location" {
 
 variable "keyvault_name" {
     type = string
-    default = "tessdfawef34tkv03"
+    default = "tessdfawef34tkv04"
 }
 
 variable "tenet_id" {
